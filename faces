@@ -1,0 +1,16 @@
+def main():
+    #Get user input
+    a = input("Enter the string")
+    #Call convert function
+    res = convert(a)
+    #print the result
+    print(res)
+
+def convert(a):
+    #Replace :) for happy emoji
+    a1 = a.replace(':)','🙂')
+    #Replace :( for sad emoji
+    a2 = a1.replace(':(','🙁')
+    # Return string
+    return a2
+main()
