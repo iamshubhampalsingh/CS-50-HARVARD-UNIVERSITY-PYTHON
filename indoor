@@ -1,0 +1,4 @@
+# Ask user to input
+a = input("please say something")
+# Print in lower case
+print(a.lower())
