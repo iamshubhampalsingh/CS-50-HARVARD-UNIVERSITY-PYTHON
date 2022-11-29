@@ -1,0 +1,18 @@
+# Get User input
+a = input("enter the expression:")
+#Convert this into variables
+#in split it will split in two, where whitespace is present
+x,y,z = a.split(" ")
+#Change type of variables x and z to float
+x1 = float(x)
+z1 = float(z)
+#Calculate the result
+if y =="+":
+    result = x1 + z1
+if y == "-":
+    result = x1 - z1
+if y == "*":
+    result = x1 * z1
+if y == "/":
+    result = x1 / z1
+print(round(result,1))
