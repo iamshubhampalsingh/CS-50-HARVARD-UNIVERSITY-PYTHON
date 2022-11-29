@@ -1,0 +1,24 @@
+#Get user input
+f = input("file name:")
+# Remove spaces and make it lower
+f2 = f.lower()
+# If gif or png or jpg or jpeg,print "image/type"
+if '.gif' in f2:
+    print("image/gif")
+elif '.png' in f2:
+    print("image/png")
+elif '.jpg' in f2:
+    print("image/jpeg")
+elif '.jpeg' in f2:
+    print("image/jpeg")
+#If pdf or zip, print "appliation/type"
+elif '.pdf' in f2:
+    print("application/pdf")
+elif '.zip' in f2:
+    print("application/zip")
+# If txt, print "text/plain"
+elif '.txt' in f2:
+    print("text/plain")
+#Otherwise, print "application/octet-stream"
+else:
+    print("application/octet-stream")
