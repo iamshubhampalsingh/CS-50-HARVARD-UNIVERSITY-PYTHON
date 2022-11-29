@@ -1,0 +1,13 @@
+# Get user input
+ans = input("Greeting:")
+ans1 = ans.lower().strip()   #strip is added to remove whitespaces from beginning and end
+# Check if the answer has 'hello', print $0
+if 'hello' in ans1:    # in and not in is membership operator
+    print("$0")
+
+# Check if answer starts with 'h', print $20
+elif 'h' == ans1[0]:
+    print("$20")
+# Otherwise print $100
+else:
+    print("$100")
