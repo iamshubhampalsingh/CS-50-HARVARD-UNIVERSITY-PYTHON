@@ -1,0 +1,13 @@
+# Get user input
+ans = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")
+# Print yes if the user inputs 42 or (case-insensitively) forty-two or forty one
+if ans.strip() == "42":
+    print("Yes")
+elif ans.lower().strip() == "forty-two":
+    print("Yes")
+elif ans.lower().strip() =="forty two":
+    print("Yes")
+
+#Otherwise output no
+else:
+    print("No")
