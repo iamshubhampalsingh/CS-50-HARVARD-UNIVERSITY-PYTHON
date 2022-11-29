@@ -1,0 +1,20 @@
+# Variable to keep track
+amount_due = 50
+
+# Loop until amount_due is greater than 0
+while amount_due > 0:
+    # Print the amount due
+    print("Amount Due:", amount_due)
+    #Ask user to insert coin
+    coin = int(input("Insert coin:"))
+    # Check if coin is 25, 10 0r 5 cents(use membership operator )
+    if coin in [25,10,5]:
+    #coin == 25 or coin == 10 0r coin == 5:
+    # Substract value from amount_due
+       amount_due -=coin
+
+
+# Calculate change_owed(use absolute value)
+change_owed = abs(amount_due)
+# Print the result
+print("changed_owed:", change_owed)
